@@ -57,7 +57,7 @@ void cargarClientes(Cliente *clientes, int cantClientes){
 			clientes[i].Productos[j].ProductoID = j; //id del producto
 			clientes[i].Productos[j].Cantidad = (rand()%10+1); //Cantidad aleatoria hasta 10
 			
-			int posProducto = (rand()%5+1); //posicion aleatoria para elegir el producto
+			int posProducto = (rand()%4+1); //posicion aleatoria para elegir el producto
 
 			clientes[i].Productos[j].TipoProducto = (char *) malloc(sizeof(char) * (strlen(TiposProductos[posProducto]) + 1)); 
 			strcpy(clientes[i].Productos[j].TipoProducto, TiposProductos[posProducto]); 
